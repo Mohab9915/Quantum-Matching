@@ -1,0 +1,52 @@
+Type,Name,Root Depth,Drought Resistance,Nitrogen Fixation,Salt Tolerance,Optimal Condition
+Microbe,Thermophilic Azotobacter (Azotobacter thermophilum),N/A,N/A,high,low,Windy Deserts
+Microbe,Halobacterium salinarum,N/A,N/A,moderate,high,Sandy Arid Soils
+Microbe,Marine Nitrosomonas (Nitrosomonas marina),N/A,N/A,high,high,Saline Wetlands
+Microbe,Alpine Rhizobia (Rhizobium alpinus),N/A,N/A,moderate,moderate,Mountain Slopes
+Microbe,Baseline Pseudomonas (Pseudomonas fluorescens),N/A,N/A,low,low,Sandy Arid Soils
+Microbe,Cyanobacteria SL-9 (Synechococcus sp.),N/A,N/A,low,high,Saline Wetlands
+Microbe,Actinobacteria MX-4 (Streptomyces sp.),N/A,N/A,moderate,low,Mountain Slopes
+Microbe,Deinococcus-Thermus DT-1,N/A,N/A,high,moderate,Windy Deserts
+Microbe,Chloroflexi TL-3 (Chloroflexus sp.),N/A,N/A,moderate,low,Mountain Slopes
+Microbe,Proteobacteria AG-8 (Bradyrhizobium sp.),N/A,N/A,high,moderate,Standard Farms
+Microbe,Bacteroidetes BF-6 (Flavobacterium sp.),N/A,N/A,low,moderate,Standard Farms
+Microbe,Firmicutes FM-2 (Bacillus halodurans),N/A,N/A,high,high,Saline Wetlands
+Microbe,Acidobacteria AC-9 (Acidobacterium sp.),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Planctomycetes PC-5 (Planctomyces sp.),N/A,N/A,low,high,Saline Wetlands
+Microbe,Spirochaetes SC-7 (Spirochaeta sp.),N/A,N/A,moderate,low,Mountain Slopes
+Microbe,Chlamydiae CM-4 (Chlamydia sp.),N/A,N/A,moderate,low,Sandy Arid Soils
+Microbe,Fusobacteria FS-8 (Fusobacterium sp.),N/A,N/A,low,moderate,Standard Farms
+Microbe,Tenericutes TN-0 (Mycoplasma sp.),N/A,N/A,moderate,high,Saline Wetlands
+Microbe,Verrucomicrobia VR-3 (Verrucomicrobium sp.),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Cyanothece CY-5 (Cyanothece sp.),N/A,N/A,high,high,Saline Wetlands
+Microbe,Arthrobacter AR-2 (Arthrobacter sp.),N/A,N/A,moderate,low,Mountain Slopes
+Microbe,Azospirillum AZ-7 (Azospirillum brasilense),N/A,N/A,high,moderate,Standard Farms
+Microbe,Burkholderia BU-1 (Burkholderia phytofirmans),N/A,N/A,high,low,Windy Deserts
+Microbe,Enterobacter EN-4 (Enterobacter cloacae),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Frankia FR-9 (Frankia alni),N/A,N/A,high,moderate,Mountain Slopes
+Microbe,Gluconacetobacter GL-6 (Gluconacetobacter diazotrophicus),N/A,N/A,high,moderate,Standard Farms
+Microbe,Paenibacillus PA-3 (Paenibacillus polymyxa),N/A,N/A,moderate,low,Sandy Arid Soils
+Microbe,Rhizobium RH-8 (Rhizobium leguminosarum),N/A,N/A,high,moderate,Standard Farms
+Microbe,Streptomyces ST-5 (Streptomyces griseus),N/A,N/A,moderate,low,Mountain Slopes
+Microbe,Xanthobacter XA-2 (Xanthobacter autotrophicus),N/A,N/A,high,moderate,Standard Farms
+Microbe,Methylobacterium ME-7 (Methylobacterium extorquens),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Azorhizobium AO-4 (Azorhizobium caulinodans),N/A,N/A,high,moderate,Standard Farms
+Microbe,Herbaspirillum HE-1 (Herbaspirillum seropedicae),N/A,N/A,high,moderate,Standard Farms
+Microbe,Azoarcus AZ-9 (Azoarcus sp.),N/A,N/A,moderate,low,Sandy Arid Soils
+Microbe,Klebsiella KL-6 (Klebsiella pneumoniae),N/A,N/A,low,moderate,Standard Farms
+Microbe,Pantoea PN-3 (Pantoea agglomerans),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Serratia SE-8 (Serratia marcescens),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Azotobacter AZ-5 (Azotobacter chroococcum),N/A,N/A,high,moderate,Standard Farms
+Microbe,Beijerinckia BE-2 (Beijerinckia indica),N/A,N/A,high,low,Windy Deserts
+Microbe,Derxia DE-7 (Derxia gummosa),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Clostridium CL-9 (Clostridium pasteurianum),N/A,N/A,low,low,Sandy Arid Soils
+Microbe,Desulfovibrio DS-4 (Desulfovibrio vulgaris),N/A,N/A,moderate,high,Saline Wetlands
+Microbe,Geobacter GE-1 (Geobacter sulfurreducens),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Heliobacterium HE-5 (Heliobacterium modesticaldum),N/A,N/A,low,moderate,Standard Farms
+Microbe,Methanobacterium MB-3 (Methanobacterium formicicum),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Nitrosospira NI-8 (Nitrosospira multiformis),N/A,N/A,high,moderate,Standard Farms
+Microbe,Oligotropha OL-2 (Oligotropha carboxidovorans),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Pelobacter PE-6 (Pelobacter propionicus),N/A,N/A,low,moderate,Standard Farms
+Microbe,Rhodobacter RH-7 (Rhodobacter sphaeroides),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Sphingomonas SP-4 (Sphingomonas paucimobilis),N/A,N/A,moderate,moderate,Standard Farms
+Microbe,Thiobacillus TH-1 (Thiobacillus denitrificans),N/A,N/A,moderate,high,Saline Wetlands

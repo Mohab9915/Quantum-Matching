@@ -1,0 +1,53 @@
+Type,Name,Root Depth,Drought Resistance,Nitrogen Fixation,Salt Tolerance,Optimal Condition
+Plant,Drought-Resistant Wheat (Triticum aestivum),deep,high,N/A,moderate,Windy Deserts
+Plant,Desert Lupine (Lupinus aridus),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Coastal Mangrove (Rhizophora mangle),deep,moderate,N/A,high,Saline Wetlands
+Plant,Alpine Clover (Trifolium alpinum),moderate,low,N/A,moderate,Mountain Slopes
+Plant,Maize (Zea mays),moderate,moderate,N/A,low,Standard Farms
+Plant,Teff Grass (Eragrostis tef),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Date Palm (Phoenix dactylifera),deep,high,N/A,moderate,Windy Deserts
+Plant,Saltwort (Salicornia europaea),shallow,moderate,N/A,high,Saline Wetlands
+Plant,Opuntia Cactus (Opuntia ficus-indica),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Alfalfa (Medicago sativa),deep,moderate,N/A,moderate,Standard Farms
+Plant,Barley (Hordeum vulgare),moderate,moderate,N/A,low,Standard Farms
+Plant,Quinoa (Chenopodium quinoa),moderate,high,N/A,moderate,Mountain Slopes
+Plant,Rice (Oryza sativa),shallow,moderate,N/A,low,Standard Farms
+Plant,Sorghum (Sorghum bicolor),moderate,high,N/A,low,Standard Farms
+Plant,Cotton (Gossypium hirsutum),deep,high,N/A,moderate,Windy Deserts
+Plant,Sunflower (Helianthus annuus),moderate,moderate,N/A,moderate,Standard Farms
+Plant,Cassava (Manihot esculenta),moderate,high,N/A,low,Standard Farms
+Plant,Sugar Beet (Beta vulgaris),moderate,moderate,N/A,moderate,Standard Farms
+Plant,Pistachio (Pistacia vera),deep,high,N/A,low,Windy Deserts
+Plant,Olive Tree (Olea europaea),deep,high,N/A,moderate,Windy Deserts
+Plant,Agave (Agave americana),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Basil (Ocimum basilicum),shallow,low,N/A,low,Standard Farms
+Plant,Thyme (Thymus vulgaris),shallow,moderate,N/A,low,Sandy Arid Soils
+Plant,Sage (Salvia officinalis),moderate,moderate,N/A,moderate,Standard Farms
+Plant,Arctic Willow (Salix arctica),shallow,low,N/A,low,Mountain Slopes
+Plant,Bamboo (Bambusoideae spp.),shallow,moderate,N/A,low,Standard Farms
+Plant,Juniper (Juniperus communis),moderate,high,N/A,moderate,Mountain Slopes
+Plant,Sea Oats (Uniola paniculata),shallow,moderate,N/A,high,Saline Wetlands
+Plant,Blue Grama (Bouteloua gracilis),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Mesquite (Prosopis glandulosa),deep,high,N/A,low,Sandy Arid Soils
+Plant,Prickly Pear (Opuntia stricta),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Saltgrass (Distichlis spicata),shallow,moderate,N/A,high,Saline Wetlands
+Plant,Tamarisk (Tamarix spp.),deep,high,N/A,high,Saline Wetlands
+Plant,Creosote Bush (Larrea tridentata),deep,high,N/A,low,Sandy Arid Soils
+Plant,Blackbrush (Coleogyne ramosissima),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Fourwing Saltbush (Atriplex canescens),moderate,high,N/A,high,Saline Wetlands
+Plant,Desert Marigold (Baileya multiradiata),shallow,moderate,N/A,low,Sandy Arid Soils
+Plant,Desert Spoon (Dasylirion wheeleri),moderate,high,N/A,low,Sandy Arid Soils
+Plant,Ocotillo (Fouquieria splendens),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Desert Ironwood (Olneya tesota),deep,high,N/A,low,Sandy Arid Soils
+Plant,Jojoba (Simmondsia chinensis),moderate,high,N/A,low,Sandy Arid Soils
+Plant,Palo Verde (Parkinsonia florida),deep,high,N/A,low,Sandy Arid Soils
+Plant,Desert Lavender (Hyptis emoryi),shallow,moderate,N/A,low,Sandy Arid Soils
+Plant,Cholla Cactus (Cylindropuntia spp.),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Desert Agave (Agave deserti),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Desert Milkweed (Asclepias subulata),shallow,moderate,N/A,low,Sandy Arid Soils
+Plant,Desert Mariposa Lily (Calochortus kennedyi),shallow,moderate,N/A,low,Sandy Arid Soils
+Plant,Desert Paintbrush (Castilleja chromosa),shallow,moderate,N/A,low,Sandy Arid Soils
+Plant,Desert Globemallow (Sphaeralcea ambigua),shallow,high,N/A,low,Sandy Arid Soils
+Plant,Desert Senna (Senna covesii),moderate,high,N/A,low,Sandy Arid Soils
+Plant,Desert Tobacco (Nicotiana obtusifolia),shallow,moderate,N/A,low,Sandy Arid Soils
+Plant,Desert Zinnia (Zinnia acerosa),shallow,moderate,N/A,low,Sandy Arid Soils
