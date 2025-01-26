@@ -1,22 +1,9 @@
 import streamlit as st
 import pandas as pd
 import time
-from qiskit_algorithms import QAOA
-from qiskit_algorithms.optimizers import COBYLA
-from qiskit.quantum_info import SparsePauliOp
-from qiskit.primitives import Sampler
+from quantum_simulation import run_quantum_simulation
+from classic_simulation import run_classical_simulation
 
-def calculate_compatibility(row, target_traits):
-    score = 0
-    for trait, target_value in target_traits.items():
-        actual_value = row[trait]
-        if actual_value == target_value:
-            score += 1
-        elif actual_value == "moderate" and target_value == "high":
-            score += 0.5
-        elif actual_value == "moderate" and target_value == "low":
-            score += 0.5
-    return score
 
 def main():
     st.set_page_config(page_title="Bio-Matcher", page_icon="🌿🔬")
@@ -69,15 +56,20 @@ def main():
                 cols[0].metric("Total Pairs", len(result_df))
                 cols[1].metric("Compute Time", f"{elapsed_time:.2f}s")
                 cols[2].metric("Algorithm", method)
-                
+
                 with st.expander("🔍 View Details"):
                     if method == "Quantum":
                         st.write("#### Quantum Specifications")
                         st.code(f"Plant Hamiltonian:\n{specs['plant_hamiltonian']}")
                         st.code(f"Microbe Hamiltonian:\n{specs['microbe_hamiltonian']}")
+                        st.write("#### QAOA Circuits")
+                        st.write("**Plant Circuit:**")
+                        st.pyplot(specs['plant_circuit'])
+                        
+                        st.write("**Microbe Circuit:**")
+                        st.pyplot(specs['microbe_circuit'])
                     st.write("#### Target Traits")
                     st.json({"Plants": specs['target_plant'], "Microbes": specs['target_microbe']})
-
                 st.dataframe(
                     result_df.head(10)[["Plant", "Microbe", "Trait Match", "Environment"]],
                     column_config={
@@ -92,76 +84,6 @@ def main():
 
             except Exception as e:
                 st.error(f"Error: {str(e)}")
-
-def run_quantum_simulation(plants, microbes, max_iter, reps):
-    sampler = Sampler()
-    optimizer = COBYLA(maxiter=max_iter)
-    
-    plant_hamiltonian = SparsePauliOp.from_list([
-        ("II", -1.0), ("IZ", 12.0), ("ZI", 15.0), ("ZZ", -20.0)
-    ])
-    microbe_hamiltonian = SparsePauliOp.from_list([
-        ("II", -1.0), ("ZI", 15.0), ("IZ", 12.0), ("ZZ", -25.0)
-    ])
-
-    plant_qaoa = QAOA(sampler=sampler, optimizer=optimizer, reps=reps)
-    plant_result = plant_qaoa.compute_minimum_eigenvalue(plant_hamiltonian)
-    plant_solution = max(plant_result.eigenstate.binary_probabilities(), 
-                       key=plant_result.eigenstate.binary_probabilities().get)
-    
-    microbe_qaoa = QAOA(sampler=sampler, optimizer=optimizer, reps=reps)
-    microbe_result = microbe_qaoa.compute_minimum_eigenvalue(microbe_hamiltonian)
-    microbe_solution = max(microbe_result.eigenstate.binary_probabilities(), 
-                          key=microbe_result.eigenstate.binary_probabilities().get)
-
-    target_plant = {
-        "Root Depth": "deep" if plant_solution[0] == '1' else "shallow",
-        "Drought Resistance": "high" if plant_solution[1] == '1' else "low"
-    }
-    
-    target_microbe = {
-        "Nitrogen Fixation": "high" if microbe_solution[0] == '1' else "low",
-        "Salt Tolerance": "high" if microbe_solution[1] == '1' else "low"
-    }
-
-    return process_results(plants, microbes, target_plant, target_microbe, plant_hamiltonian, microbe_hamiltonian)
-
-def run_classical_simulation(plants, microbes, target_plant_depth, target_plant_drought):
-    target_plant = {
-        "Root Depth": target_plant_depth,
-        "Drought Resistance": target_plant_drought
-    }
-    
-    target_microbe = {
-        "Nitrogen Fixation": "high",
-        "Salt Tolerance": "high"
-    }
-
-    return process_results(plants, microbes, target_plant, target_microbe)
-
-def process_results(plants, microbes, target_plant, target_microbe, plant_hamiltonian=None, microbe_hamiltonian=None):
-    plants['Score'] = plants.apply(calculate_compatibility, axis=1, args=(target_plant,))
-    microbes['Score'] = microbes.apply(calculate_compatibility, axis=1, args=(target_microbe,))
-
-    pairs = []
-    for _, plant in plants.iterrows():
-        for _, microbe in microbes.iterrows():
-            if plant["Optimal Condition"] == microbe["Optimal Condition"]:
-                pairs.append({
-                    "Plant": plant["Name"],
-                    "Microbe": microbe["Name"],
-                    "Trait Match": (plant['Score'] + microbe['Score']) * 25,
-                    "Environment": plant["Optimal Condition"]
-                })
-
-    specs = {
-        'target_plant': target_plant,
-        'target_microbe': target_microbe,
-        'plant_hamiltonian': plant_hamiltonian,
-        'microbe_hamiltonian': microbe_hamiltonian
-    }
-
-    return pd.DataFrame(pairs).sort_values("Trait Match", ascending=False), specs
 
 if __name__ == "__main__":
     main()

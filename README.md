@@ -92,3 +92,11 @@ The quantum implementation uses:
 - QAOA (Quantum Approximate Optimization Algorithm)
 - Custom Hamiltonians for plant and microbe trait optimization
 - SparsePauliOp for quantum state representation
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
