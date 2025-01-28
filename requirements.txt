@@ -1,6 +1,6 @@
 streamlit==1.32.0
 pandas==2.2.1
-numpy==1.24.3
+numpy==1.26.2
 qiskit==1.0.0
 qiskit-algorithms==0.3.0
 matplotlib==3.8.2
