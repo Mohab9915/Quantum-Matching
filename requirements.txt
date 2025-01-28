@@ -3,6 +3,5 @@ pandas==2.2.1
 numpy==1.24.3
 qiskit==1.0.0
 qiskit-algorithms==0.3.0
-matplotlib==3.8.2
+matplotlib>=3.8.2
 plotly==5.18.0
-time==3.10.0
